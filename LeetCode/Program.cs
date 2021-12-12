@@ -22,35 +22,8 @@ namespace LeetCode
 
         static void Main(string[] args)
         {
-            char[] input = { 'o', 'n', 'e', ' ', ' ', 't', 'w', 'o', ' ', 't', 'h', 'r', 'e', 'e', ' ' };
-
-            string res = "";
-            string temp = "";
-
-            for(int i = input.Length-1; i>=0;i-- )
-            {
-                if(input[i] != ' ')
-                {
-                    temp = temp + input[i].ToString();
-                } else if (input[i] == ' ')
-                {
-                    res += ReverseString(temp);
-                    res += " ";
-                    
-                    temp = "";
-                }
-            }
-
-            if (temp.Length > 0)
-            {
-                res += ReverseString(temp);
-            }
-
-
-            for (var i = 0; i < res.Length; i++)
-            {
-                Console.WriteLine(res[i]);
-            }
+            int res = ContainerWithMostWaterSolution.MaxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 });
+            Console.WriteLine(res);
         }
     }
 }
