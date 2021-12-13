@@ -22,7 +22,7 @@ namespace LeetCode
 
         static void Main(string[] args)
         {
-            var res = LongestCommonPrefixSolution.LongestCommonPrefix(new string[] { "flower", "flow", "flight" });
+            var res = BinarySearchSolution.Search(new int[] { 5 }, 5);
             Console.WriteLine(res);
         }
     }
