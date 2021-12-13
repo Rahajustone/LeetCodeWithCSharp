@@ -22,7 +22,7 @@ namespace LeetCode
 
         static void Main(string[] args)
         {
-            int res = ContainerWithMostWaterSolution.MaxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 });
+            var res = LongestCommonPrefixSolution.LongestCommonPrefix(new string[] { "flower", "flow", "flight" });
             Console.WriteLine(res);
         }
     }
