@@ -22,8 +22,9 @@ namespace LeetCode
 
         static void Main(string[] args)
         {
-            var res = BinarySearchSolution.Search(new int[] { 5 }, 5);
-            Console.WriteLine(res);
+            Console.WriteLine( 1/2);
+            //var res = BinarySearchSolution.Search(new int[] { 5 }, 5);
+            //Console.WriteLine(res);
         }
     }
 }

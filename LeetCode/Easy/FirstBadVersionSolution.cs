@@ -10,6 +10,7 @@ namespace LeetCode.Easy
         {
             return true;
         }
+
         public static int FirstBadVersion(int n)
         {
             int start = 0;
