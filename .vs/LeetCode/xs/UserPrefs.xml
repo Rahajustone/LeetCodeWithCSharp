@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{F0A42E01-BAAD-46DE-9870-E479D6C8555A}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.LeetCode PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LeetCode/Easy/MergeTwoSortedListsSolution.cs">
+    <Files>
+      <File FileName="LeetCode/Easy/TwoSumSolution.cs" Line="29" Column="56" />
+      <File FileName="LeetCode/Easy/RemoveElementSolution.cs" Line="19" Column="22" />
+      <File FileName="LeetCode/Easy/MergeTwoSortedListsSolution.cs" Line="39" Column="31" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LeetCode" expanded="True">
+            <Node name="LeetCode" expanded="True">
+              <Node name="Easy" expanded="True">
+                <Node name="MergeTwoSortedListsSolution.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+</Properties>

@@ -17,38 +17,26 @@ namespace LeetCode.Easy
  
     public class MergeTwoSortedListsSolution
     {
-        public ListNode MergeTwoLists(ListNode l1, ListNode l2)
+        public ListNode MergeTwoLists(ListNode list1, ListNode list2)
         {
-
-            ListNode res = null;
-            while (l1 != null || l2 != null)
-            {
-                if (l1 != null && l2 != null)
+            ListNode dummy = new ListNode();
+            ListNode tail = dummy;
+            while(list1 != null && list2 != null) {
+                if(list1.val < list2.val)
                 {
-                    if (l1.val < l2.val)
-                    {
-                        res = new ListNode(l1.val, new ListNode());
-                        l1 = l1.next;
-                    }
-                    else
-                    {
-                        res = new ListNode(l2.val, new ListNode());
-                        l2 = l2.next;
-                    }
-                }
-                else if (l1 != null && l2 == null)
+                    tail.next = list1;
+                    list1 = list1.next;
+                } else
                 {
-                    res = new ListNode(l1.val, new ListNode());
-                    l1 = l1.next;
+                    tail.next = list2;
+                    list2 = list2.next;
                 }
-                else if (l1 == null && l2 != null)
-                {
-                    res = new ListNode(l2.val, new ListNode());
-                    l2 = l2.next;
-                }
+                tail = tail.next;
             }
 
-            return res;
+            tail.next = (list1 != null) ? list1 : list2;
+
+            return dummy.next;
         }
     }
 }

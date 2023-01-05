@@ -11,23 +11,22 @@ namespace LeetCode.Easy
     {
         public int[] TwoSumAnotherWay(int[] nums, int target)
         {
-            int[] res = new int[2];
-            Dictionary<int, int> dics = new Dictionary<int, int>();
-
-            for(int i = 0; i < nums.Length; i++)
-                dics.Add(nums[i], i);
-
-            for(int j = 0; j < nums.Length; j++)
+            Dictionary<int, int> map = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
             {
-                int tempData = target - nums[j];
-                if(dics.ContainsKey(tempData))
+                int complement = target - nums[i];
+                if (map.ContainsKey(complement))
                 {
-                    res[0] = j;
-                    res[1] = dics[tempData];
+                    return new int[] { map[complement], i };
+                }
+
+                if (!(map.ContainsKey(nums[i])))
+                {
+                    map[nums[i]] = i;
                 }
             }
 
-            return res;
+            throw new Exception("No two sum solution");
         }
 
 
