@@ -9,22 +9,12 @@ namespace LeetCode
 {
     class Program
     {
-        public static string ReverseString(string str)
-        {
-            string res = "";
-            for (int i = str.Length - 1; i >= 0; i--)
-            {
-                res += str[i];
-            }
-
-            return res;
-        }
-
         static void Main(string[] args)
         {
-            Console.WriteLine( 1/2);
-            //var res = BinarySearchSolution.Search(new int[] { 5 }, 5);
-            //Console.WriteLine(res);
+            var arr1 = new int[] { 1,3 };
+            var arr2 = new int[] {2};
+            var res = MedianOfTwoSortedArraysSolutionWithPointers.FindMedianSortedArraysWith(arr1, arr2);
+            Console.WriteLine(res);
         }
     }
 }

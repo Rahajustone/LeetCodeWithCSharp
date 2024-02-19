@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rkholov/Desktop/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj": {}
+    "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj": {}
   },
   "projects": {
-    "/Users/rkholov/Desktop/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj": {
+    "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rkholov/Desktop/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj",
+        "projectUniqueName": "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj",
         "projectName": "LeetCode",
-        "projectPath": "/Users/rkholov/Desktop/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj",
+        "projectPath": "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj",
         "packagesPath": "/Users/rkholov/.nuget/packages/",
-        "outputPath": "/Users/rkholov/Desktop/GitHubRepo/LeetCodeWithCSharp/LeetCode/obj/",
+        "outputPath": "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rkholov/.nuget/NuGet/NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
         }
       }
     }
