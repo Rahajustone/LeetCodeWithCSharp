@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace LeetCode.Easy
 {
-	public class RemoveElementSolution
+	public static class RemoveElementSolution
 	{
 		public static int RemoveElement(int[] nums, int val)
         {
@@ -16,6 +16,12 @@ namespace LeetCode.Easy
                     k++;
                 }
             }
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                Console.WriteLine(nums[i]);
+            }
+
             return k;
         }
 	}

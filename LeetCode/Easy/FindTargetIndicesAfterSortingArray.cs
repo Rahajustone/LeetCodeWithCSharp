@@ -24,6 +24,9 @@ namespace LeetCode.Easy
                 } else if(nums[median] > target)
                 {
                     right = median - 1;
+                } else
+                {
+                    left = median + 1;
                 }
 
             }
