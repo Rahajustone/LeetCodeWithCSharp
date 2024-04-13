@@ -29,3 +29,9 @@ steps:
     packagesToPack: '**/LeetCode.csproj'
     nobuild: true
     versioningScheme: 'byBuildNumber'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'd4803183-acd6-4a74-92e6-ed140af41fe6'
