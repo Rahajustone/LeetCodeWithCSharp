@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net8.0": {
       "coverlet.collector/6.0.2": {
         "type": "package",
         "build": {
@@ -797,7 +797,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net8.0": [
       "Microsoft.NET.Test.Sdk >= 17.10.0-release-24177-07",
       "NUnit >= 4.1.0",
       "NUnit.Analyzers >= 4.1.0",
@@ -822,14 +822,14 @@
         "/Users/rkholov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7"
+        "net8"
       ],
       "sources": {
         "https://pkgs.dev.azure.com/khrahmatullo/_packaging/Test/nuget/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7",
+        "net8.0": {
+          "targetAlias": "net8",
           "projectReferences": {}
         }
       },
@@ -845,8 +845,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7",
+      "net8.0": {
+        "targetAlias": "net8",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -889,7 +889,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
