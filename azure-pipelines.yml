@@ -4,6 +4,8 @@
 # https://aka.ms/yaml
 
 name: '$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)'
+variables:
+  BuildConfiguration: Release
 trigger:
 - main
 
