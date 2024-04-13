@@ -16,14 +16,12 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    feedsToUse: 'select'
-    vstsFeed: 'd4803183-acd6-4a74-92e6-ed140af41fe6'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/LeetCode.csproj'
+    projects: '**/LeetCode.sln'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'pack'
-    packagesToPack: '**/LeetCode.csproj'
+    packagesToPack: '**/LeetCode.sln'
     versioningScheme: 'byBuildNumber'
