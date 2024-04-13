@@ -7,8 +7,7 @@
     <Version>1.0.0</Version>
     <Authors>Raha</Authors>
     <Company>raha</Company>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageOutputPath>../../LeetCode</PackageOutputPath>
+   
   </PropertyGroup>
 
   <ItemGroup>
