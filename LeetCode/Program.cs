@@ -4,6 +4,7 @@ using LeetCode.Medium;
 using LeetCode.Others;
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace LeetCode
 {
@@ -15,25 +16,64 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(RemoveElementSolution.RemoveElement(new int[] { 3, 2, 2, 3 }, 3));
+            string text = "This sentence contains both lowercase and uppercase English letters , punctuation marks,and spaces.";
 
+            var res = Solution(text);
+            Console.WriteLine(res);
 
-            //var t = new Test()
-            //{
-            //    Age =17
-            //};
-            //t.Age = 20;
-
-            //var a = t with { Age = 15};
-
-            //Console.WriteLine(t.Age);
-            //Console.WriteLine(a.Age);
-            //Console.WriteLine("tets");
-
-            //var arr1 = new int[] { 1,3 };
-            //var arr2 = new int[] {2};
-            //var res = MedianOfTwoSortedArraysSolutionWithPointers.FindMedianSortedArraysWith(arr1, arr2);
-            //Console.WriteLine(res);
         }
+
+
+        static string Solution(string text)
+        {
+            StringBuilder correctedText = new StringBuilder();
+
+            char[] punctuationMarks = { ',', '.', '?', '!' };
+            bool lastCharIsPunctuation = false;
+
+            foreach (char c in text)
+            {
+                if (c == ' ')
+                {
+                    // Skip consecutive spaces
+                    if (correctedText.Length > 0 && correctedText[correctedText.Length - 1] != ' ')
+                    {
+                        correctedText.Append(c);
+                    }
+                }
+                else if (Array.IndexOf(punctuationMarks, c) != -1)
+                {
+                    // Ensure no space before punctuation
+                    if (correctedText.Length > 0 && correctedText[correctedText.Length - 1] == ' ')
+                    {
+                        correctedText.Remove(correctedText.Length - 1, 1);
+                    }
+
+                    // Add space after punctuation if not last character
+                    if (!lastCharIsPunctuation)
+                    {
+                        correctedText.Append(c);
+                        correctedText.Append(' ');
+                    }
+                    else
+                    {
+                        correctedText.Append(c);
+                    }
+
+                    lastCharIsPunctuation = true;
+                }
+                else
+                {
+                    correctedText.Append(c);
+                    lastCharIsPunctuation = false;
+                }
+            }
+
+            return correctedText.ToString();
+        }
+            
+
+
+
     }
 }
