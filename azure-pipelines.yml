@@ -15,14 +15,14 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    projects: '**/LeetCode.sln'
+    projects: '**/LeetCode.csproj'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/LeetCode.sln'
+    projects: '**/LeetCode.csproj'
     arguments: '-c $(BuildConfiguration)'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'pack'
-    packagesToPack: '**/LeetCode.sln'
+    packagesToPack: '**/LeetCode.csproj'
     versioningScheme: 'byBuildNumber'
