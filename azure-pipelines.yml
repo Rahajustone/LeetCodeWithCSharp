@@ -25,4 +25,5 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: '**/LeetCode.csproj'
+    nobuild: true
     versioningScheme: 'byBuildNumber'
