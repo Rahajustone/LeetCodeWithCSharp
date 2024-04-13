@@ -20,6 +20,7 @@ steps:
   inputs:
     command: 'build'
     projects: '**/LeetCode.sln'
+    arguments: '-c $(BuildConfiguration)'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'pack'
