@@ -12,9 +12,16 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            string str = "A man, a plan, a canal: Panama";
-            var res = ValidPalindrome.IsPalindrome(str);
-            Console.WriteLine(res);
+            Console.WriteLine(1|2);
+            Console.WriteLine(1&2);
+            Console.WriteLine(1<<2);
+            Console.WriteLine(1>>2);
+            Console.WriteLine(1^2);
+
+            //var arr = new int [] { 4, 1, 2, 1, 2 };
+            //var res = SingleNumber.SingleNumberSolition(arr);
+            //Console.WriteLine(res);
+
         }
 
     }
