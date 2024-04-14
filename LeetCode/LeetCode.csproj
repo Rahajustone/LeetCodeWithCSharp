@@ -5,15 +5,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
-    <PackageId>LeetCode.Test</PackageId>
+    <!-- <PackageId>LeetCodeP.Test</PackageId>
     <Version>1.0.0</Version>
     <Authors>Raha</Authors>
     <Company>raha</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IsPackable>true</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <PackageOutputPath>../../LeetCode</PackageOutputPath>
+    <PackageOutputPath>../../LeetCode</PackageOutputPath> -->
    
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>

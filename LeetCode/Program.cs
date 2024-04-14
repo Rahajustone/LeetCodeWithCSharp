@@ -12,7 +12,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-
+            string str = "A man, a plan, a canal: Panama";
+            var res = ValidPalindrome.IsPalindrome(str);
+            Console.WriteLine(res);
         }
 
     }

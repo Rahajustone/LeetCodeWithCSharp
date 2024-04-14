@@ -96,14 +96,14 @@
           "/Users/rkholov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
-            "targetAlias": "net8",
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -115,7 +115,7 @@
       },
       "frameworks": {
         "net8.0": {
-          "targetAlias": "net8",
+          "targetAlias": "net8.0",
           "dependencies": {
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

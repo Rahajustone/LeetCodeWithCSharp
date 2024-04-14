@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj",
-        "projectName": "LeetCode.Test",
+        "projectName": "LeetCode",
         "projectPath": "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj",
         "packagesPath": "/Users/rkholov/.nuget/packages/",
         "outputPath": "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/obj/",
