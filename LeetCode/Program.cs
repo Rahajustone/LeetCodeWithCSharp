@@ -4,25 +4,35 @@ using LeetCode.Medium;
 using LeetCode.Others;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+using System.Net.NetworkInformation;
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LeetCode
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(1|2);
-            Console.WriteLine(1&2);
-            Console.WriteLine(1<<2);
-            Console.WriteLine(1>>2);
-            Console.WriteLine(1^2);
+            var nums = new int[] { 0, 0, 0, 0, 0, 0 };
 
-            //var arr = new int [] { 4, 1, 2, 1, 2 };
-            //var res = SingleNumber.SingleNumberSolition(arr);
-            //Console.WriteLine(res);
+            var res = new ThreeSomeSolution();
+            var result = res.ThreeSum(nums);
+
+            foreach (var item in result)
+            {
+                foreach (var i in item)
+                {
+                    Console.Write(i);
+
+                }
+
+                Console.WriteLine();
+            }
+
+
 
         }
-
     }
 }
