@@ -30,10 +30,9 @@ namespace LeetCode.Easy
             return count;
         }
 
-        public int MaxDepthTwoPointer(string s)
+        public int MaxDepthWithoutStack(string s)
         {
 
-            Stack<char> chars = new Stack<char>();
             int count = 0;
             int max = int.MinValue;
 
@@ -42,12 +41,10 @@ namespace LeetCode.Easy
             {
                 if (s[i] == '(')
                 {
-                    chars.Push(s[i]);
                     count++;
                 }
                 if (s[i] == ')')
                 {
-                    chars.Pop();
                     count--;
                 }
 
