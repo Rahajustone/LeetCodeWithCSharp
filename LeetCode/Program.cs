@@ -15,13 +15,13 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine( "hellow");
-            var test = new RemoveOutermostParentheses();
-            string chars = "((()))";
+            string[] arr = new string[] { "5", "2", "C", "D", "+" };
 
-            var result = test.RemoveOuterParentheses(chars);
+            var a = new BaseballGameSolution();
+            var res = a.CalPoints(arr);
 
-            Console.WriteLine(result);
+            Console.WriteLine(res);
+
 
         }
     }
