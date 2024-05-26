@@ -15,6 +15,7 @@
     <PackageOutputPath>../../LeetCode</PackageOutputPath> -->
    
     <OutputType>Exe</OutputType>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
