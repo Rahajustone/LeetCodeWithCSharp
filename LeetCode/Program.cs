@@ -15,12 +15,15 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            string[] arr = new string[] { "5", "2", "C", "D", "+" };
+            var res = new ImplementStackUsingQueues();
+            res.Push(1);
+            res.Push(2);
+            res.Push(3);
+            res.Push(4);
 
-            var a = new BaseballGameSolution();
-            var res = a.CalPoints(arr);
-
-            Console.WriteLine(res);
+            Console.WriteLine(res.Pop());
+            Console.WriteLine(res.Pop());
+            Console.WriteLine(res.Top());
 
 
         }
