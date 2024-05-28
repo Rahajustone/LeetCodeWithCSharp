@@ -15,16 +15,10 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var res = new ImplementStackUsingQueues();
-            res.Push(1);
-            res.Push(2);
-            res.Push(3);
-            res.Push(4);
-
-            Console.WriteLine(res.Pop());
-            Console.WriteLine(res.Pop());
-            Console.WriteLine(res.Top());
-
+            StringBuilder sb = new StringBuilder();
+            sb.Insert(0, "hello");
+            sb.Insert(0, "world");
+            Console.WriteLine(sb.ToString());
 
         }
     }
