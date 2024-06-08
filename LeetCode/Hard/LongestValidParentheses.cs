@@ -1,9 +1,9 @@
 ﻿using System;
 namespace LeetCode.Hard
 {
-	public class LongestValidParentheses
+	public class LongestValidParenthesesSolution
 	{
-		public LongestValidParentheses()
+		public LongestValidParenthesesSolution()
 		{
 		}
 

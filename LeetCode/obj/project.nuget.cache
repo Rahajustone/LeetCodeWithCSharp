@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vQcRFYJhosw2Zi+sEWIRiqLsTovw2ks5CGeeTJRXlC3OFewG/IGlf+ktpZTYcxVYTdm1WthLFsgTKa0RE5Etmw==",
+  "dgSpecHash": "/Cs0/inRzPw=",
   "success": true,
-  "projectFilePath": "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj",
+  "projectFilePath": "C:\\Users\\khrah\\Desktop\\Repos\\LeetCodeWithCSharp\\LeetCode\\LeetCode.csproj",
   "expectedPackageFiles": [
-    "/Users/rkholov/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512"
+    "C:\\Users\\khrah\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512"
   ],
   "logs": []
 }

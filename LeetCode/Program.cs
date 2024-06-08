@@ -15,10 +15,18 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            StringBuilder sb = new StringBuilder();
-            sb.Insert(0, "hello");
-            sb.Insert(0, "world");
-            Console.WriteLine(sb.ToString());
+            int[] integers = new int[] {1,2,3,4,5,6};
+            Queue<int> ints = new Queue<int>(integers);
+
+            Console.WriteLine(ints.Dequeue());
+            Console.WriteLine(ints.Dequeue());
+            Console.WriteLine(ints.Dequeue());
+            Console.WriteLine(ints.Dequeue());
+            Console.WriteLine(ints.Dequeue());
+            ints.Enqueue(1);
+            ints.Enqueue(2);
+            Console.WriteLine($"count: {ints.Count}, {ints.Peek()}");
+
 
         }
     }
