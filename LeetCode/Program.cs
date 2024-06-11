@@ -20,7 +20,7 @@ namespace LeetCode
             //var r1 = obj.findFirstUnique("lolop");
             //Console.WriteLine(r1);
             StringBuilder res = new StringBuilder("lolop");
-            res.Insert(0, "R", 1);
+            res.Replace('o', 'R');
             Console.WriteLine(res);
            
 

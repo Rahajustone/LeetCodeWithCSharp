@@ -12,15 +12,12 @@ namespace LeetCode.Easy
         public int findFirstUnique(string s)
         {
             Dictionary<char, int> keyValuePairs = new Dictionary<char, int>();
-            Queue<int> queue = new Queue<int>();
 
             for(int i=0;i<s.Length;i++) {
-                if (keyValuePairs.ContainsKey(s[i])) {
+                if (keyValuePairs.ContainsKey(s[i]))
                     keyValuePairs[s[i]] = keyValuePairs[s[i]] + 1;
-                } else
-                {
+                else
                     keyValuePairs.Add(s[i], 1);
-                }
             }
 
             for (int i = 0; i < s.Length; i++)

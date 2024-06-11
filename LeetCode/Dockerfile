@@ -5,10 +5,10 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0-preview AS build
 WORKDIR /src
-COPY ["LeetCode/LeetCode.csproj", "LeetCode/"]
-RUN dotnet restore "LeetCode/LeetCode.csproj"
 COPY . .
-WORKDIR "/src/LeetCode"
+RUN dotnet restore "LeetCode.csproj"
+COPY . .
+WORKDIR "/src"
 RUN dotnet build "LeetCode.csproj" -c Release -o /app/build
 
 FROM build AS publish
