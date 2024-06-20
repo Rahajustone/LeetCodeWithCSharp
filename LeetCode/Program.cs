@@ -15,15 +15,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            //var obj = new FirstUniqueCharacterString();
-
-            //var r1 = obj.findFirstUnique("lolop");
-            //Console.WriteLine(r1);
-            StringBuilder res = new StringBuilder("lolop");
-            res.Replace('o', 'R');
-            Console.WriteLine(res);
-           
-
+            Queue<int> ints = new Queue<int>();
+            ints.Enqueue(1);
+            ints.Enqueue(2);
+            ints.Enqueue(3);
+            Console.WriteLine(ints.Dequeue());
 
         }
     }
