@@ -102,11 +102,11 @@ public class FrontMiddleBackQueue
 
     public int PopMiddle()
     {
-
+        throw new NotImplementedException();
     }
 
     public int PopBack()
     {
-
+        throw new NotImplementedException();
     }
 }
