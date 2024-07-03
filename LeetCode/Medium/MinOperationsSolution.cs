@@ -40,7 +40,33 @@ namespace LeetCode.Medium
 
             return count;
         }
-        
+
+
+        public static int MinOperationsSlidingWindows(int[] nums)
+        {
+            //
+            int count = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == 0)
+                {
+                    count++;
+                    nums[i] = 1;
+                    if ((i + 2) >= nums.Length)
+                        return -1;
+
+
+                    nums[i + 1] = FlipBinary(nums[i + 1]);
+                    nums[i + 2] = FlipBinary(nums[i + 2]);
+
+                }
+            }
+
+            return count;
+        }
+
+
+
         private static int FlipBinary(int i) => i == 0 ? 1 : 0;
     }
 }
