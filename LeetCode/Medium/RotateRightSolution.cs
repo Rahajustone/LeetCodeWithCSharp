@@ -1,3 +1,5 @@
+namespace LeetCode.Medium.RotateList;
+
 public class ListNode
 {
 	public int val;
@@ -9,7 +11,7 @@ public class ListNode
 	}
 }
 
-public class Solution
+public class RotateListSolution
 {
 	public ListNode RotateRight(ListNode head, int k)
 	{
@@ -21,19 +23,52 @@ public class Solution
 		for (int i = 0; i < k; i++)
 		{
 			fast = fast.next;
-			// if (fast == null)
-			// 	return head;
-			newNode = new ListNode(fast.val, newNode);
+			if (fast == null)
+			{
+				fast = head;
+				newNode = null;
+			}
+			if (newNode == null)
+				newNode = new ListNode(fast.val);
+			else
+			{
+				var temp = newNode;
+				while (temp.next != null)
+				{
+					temp = temp.next;
+				}
+				temp.next = new ListNode(fast.val);
+			}
 		}
 
-		while (fast != null)
+		if (fast.next == null)
+			return newNode;
+
+		ListNode startNode = null;
+		while (fast.next != null)
 		{
 			fast = fast.next;
 			slow = slow.next;
+			var temp = startNode;
+			if (startNode == null)
+			{
+				startNode = new ListNode(fast.val);
+			}
+			else
+			{
+				while (temp.next != null)
+				{
+					temp = temp.next;
+				}
+				temp.next = new ListNode(fast.val);
+				if (fast.next == null)
+				{
+					temp.next = newNode;
+					break;
+				}
+			}
 		}
 
-		fast.next = newNode;
-
-		return fast;
+		return startNode;
 	}
 }
