@@ -1,36 +1,55 @@
 ﻿using System;
 namespace LeetCode.Medium
 {
-	public class FourSumSolution
-	{
-       // TODO
-        public IList<IList<int>> FourSum(int[] nums, int target)
+    public class FourSumSolution
+    {
+        public static IList<IList<int>> FourSum(int[] nums, int target)
         {
             var result = new List<IList<int>>();
             if (nums.Length < 4) return result;
 
             Array.Sort(nums);
 
-            int start = 0, left = 1, right = nums.Length - 1;
+            int current = 0;
+            int end = nums.Length - 1;
 
-            int minDistance = int.MaxValue;
-            int sum = int.MinValue;
-
-            while (start < nums.Length-2)
+            while (current < nums.Length - 3)
             {
-                int tempValue = target - nums[start];
-                while (left<right)
+
+                while (current + 2 < end)
                 {
-                    int currentSum = tempValue - (nums[left] + nums[right]);
-                    if(currentSum == target)
+                    int tempValue = nums[current] + nums[end];
+                    if (tempValue > target)
                     {
-                        var temp = new List<int>();
+                        end--;
+                        continue;
+                    }
+                    int left = current + 1, right = end - 1;
+
+                    while (left < right)
+                    {
+                        int currentSum = tempValue + (nums[left] + nums[right]);
+                        if (currentSum == target)
+                        {
+                            result.Add(new List<int> { nums[current], nums[left], nums[right], nums[end] });
+                            left++;
+                            right--;
+                        }
+                        else if (currentSum > target)
+                        {
+                            right--;
+                        }
+                        else
+                        {
+                            left++;
+                        }
                     }
 
-
+                    end--;
                 }
 
-
+                current++;
+                end = nums.Length - 1;
             }
 
             return result;

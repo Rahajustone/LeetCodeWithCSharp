@@ -14,9 +14,19 @@ public class Program
 {
     static void Main(string[] args)
     {
-        int[] newInt = new int[] { 0, 1, 1, 1, 0, 0 };
-        var res = MinOperationsSolution.MinOperations(newInt);
-        Console.WriteLine(res);
+        var head = new RotateRightSolution.ListNode(1);
+        head.next = new RotateRightSolution.ListNode(2);
+        head.next.next = new RotateRightSolution.ListNode(3);
+        head.next.next.next = new RotateRightSolution.ListNode(4);
+        head.next.next.next.next = new RotateRightSolution.ListNode(5);
+
+        RotateRightSolution linkedRotate = new RotateRightSolution();
+        linkedRotate.RotateRight(head, 2);
+
+        // head = [1,2,3,4,5], k = 2
+        // int[] newInt = new int[] { 1, 0, -1, 0, -2, 2 };
+        // var res = FourSumSolution.FourSum(newInt, 0);
+        // Console.WriteLine(res);
 
         //MyCircularDeque myCircularDeque = new MyCircularDeque(3);
         //Console.WriteLine(myCircularDeque.InsertLast(1));  // return True

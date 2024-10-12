@@ -264,3 +264,8 @@ __pycache__/
 LeetCode.UnitTest/obj/*
 LeetCode/obj/*
 /obj/
+LeetCode/obj/LeetCode.csproj.nuget.dgspec.json
+LeetCode/obj/LeetCode.csproj.nuget.g.props
+LeetCode/obj/LeetCode.csproj.nuget.g.targets
+LeetCode/obj/project.assets.json
+LeetCode/obj/project.nuget.cache

@@ -88,32 +88,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\khrah\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/rkholov/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\khrah\\Desktop\\Repos\\LeetCodeWithCSharp\\LeetCode\\LeetCode.csproj",
+      "projectUniqueName": "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj",
       "projectName": "LeetCode",
-      "projectPath": "C:\\Users\\khrah\\Desktop\\Repos\\LeetCodeWithCSharp\\LeetCode\\LeetCode.csproj",
-      "packagesPath": "C:\\Users\\khrah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\khrah\\Desktop\\Repos\\LeetCodeWithCSharp\\LeetCode\\obj\\",
+      "projectPath": "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/LeetCode.csproj",
+      "packagesPath": "/Users/rkholov/.nuget/packages/",
+      "outputPath": "/Users/rkholov/Desktop/BestDotnetTraining/GitHubRepo/LeetCodeWithCSharp/LeetCode/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\khrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/rkholov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -160,7 +152,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
