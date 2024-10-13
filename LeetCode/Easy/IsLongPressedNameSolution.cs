@@ -37,7 +37,6 @@ public class IsLongPressedNameSolution
         }
 
         if (countSameChar > countChar) return false;
-
       }
       else
       {
@@ -48,5 +47,22 @@ public class IsLongPressedNameSolution
     if (firstPointer == nameLength && lastPointer == typedLength)
       return true;
     return false;
+  }
+
+
+  public bool IsLongPressedNameSecondSolution(string name, string typed)
+  {
+    //
+
+    int index = 0;
+    for (int i = 0; i < typed.Length; i++)
+    {
+      if (index < name.Length && name[index] == typed[i]) { index++; continue; }
+      else if (index > 0 && name[index - 1] == typed[i]) { continue; }
+      return false;
+    }
+
+    if (index < name.Length) { return false; }
+    return true;
   }
 }
