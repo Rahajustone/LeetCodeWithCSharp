@@ -5,51 +5,45 @@ namespace LeetCode.Medium
     {
         public static IList<IList<int>> FourSum(int[] nums, int target)
         {
-            var result = new List<IList<int>>();
+            List<IList<int>> result = new List<IList<int>>();
             if (nums.Length < 4) return result;
 
             Array.Sort(nums);
 
-            int current = 0;
-            int end = nums.Length - 1;
-
-            while (current < nums.Length - 3)
+            int left, right;
+            for (int i = 0; i < nums.Length - 3; i++)
             {
+                if (i > 0 && nums[i] == nums[i - 1]) continue;
 
-                while (current + 2 < end)
+                for (int j = i + 1; j < nums.Length - 2; j++)
                 {
-                    int tempValue = nums[current] + nums[end];
-                    if (tempValue > target)
-                    {
-                        end--;
-                        continue;
-                    }
-                    int left = current + 1, right = end - 1;
+                    if (j > i + 1 && nums[j] == nums[j - 1]) continue;
 
+                    left = j + 1;
+                    right = nums.Length - 1;
+                    long sumTarget = (long)target - nums[j] - nums[i];
                     while (left < right)
                     {
-                        int currentSum = tempValue + (nums[left] + nums[right]);
-                        if (currentSum == target)
+                        long sum = (long)nums[left] + nums[right];
+                        if (sum == sumTarget)
                         {
-                            result.Add(new List<int> { nums[current], nums[left], nums[right], nums[end] });
+                            result.Add(new List<int> { nums[i], nums[j], nums[left], nums[right] });
+                            while (left < right && nums[left] == nums[left + 1]) left++;
+                            while (left < right && nums[right] == nums[right - 1]) right--;
                             left++;
                             right--;
+
                         }
-                        else if (currentSum > target)
+                        else if (sum < sumTarget)
                         {
-                            right--;
+                            left++;
                         }
                         else
                         {
-                            left++;
+                            right--;
                         }
                     }
-
-                    end--;
                 }
-
-                current++;
-                end = nums.Length - 1;
             }
 
             return result;
