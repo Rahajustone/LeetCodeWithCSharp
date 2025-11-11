@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <!-- Do not create NuGet packages on normal builds -->
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+    <!-- Ensure packages, if created, land inside the repo -->
+    <PackageOutputPath>$(MSBuildThisFileDirectory)artifacts/packages</PackageOutputPath>
+  </PropertyGroup>
+
+  <!-- Optional: for test projects, enforce no-pack -->
+  <ItemGroup>
+    <ProjectReference Update="**/*UnitTest*.csproj">
+      <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
